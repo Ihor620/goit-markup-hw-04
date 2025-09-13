@@ -129,7 +129,16 @@ li {
 
 .main-hero {
   background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   min-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,6 +177,7 @@ li {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover {
@@ -208,6 +218,22 @@ li {
   overflow: hidden;
 }
 
+.icon-box {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-icon {
+  width: 64px;
+  height: 64px;
+}
+
 .advantages-container {
   display: block;
 }
@@ -222,6 +248,9 @@ li {
 
 .advantages-li {
   width: calc((100% - 72px) / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .advantages-p {
@@ -258,12 +287,19 @@ li {
 
 .team-content {
   padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .team-list-names {
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #ffffff;
+  gap: 8px;
 }
 
 .team-header-name {
@@ -273,7 +309,6 @@ li {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .team-p {
@@ -283,6 +318,32 @@ li {
   color: #434455;
   width: 264px;
   text-align: center;
+}
+
+.team-icon_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-icon_link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.team-icon {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-container {
