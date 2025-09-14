@@ -350,15 +350,6 @@ li {
   text-align: center;
 }
 
-.team-icon_box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  padding: 32px 0;
-}
-
 .team-icon_list {
   display: flex;
   justify-content: center;
