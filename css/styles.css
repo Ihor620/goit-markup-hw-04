@@ -39,10 +39,8 @@ li {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #4d5ae5;
   display: flex;
-  height: 72px;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -81,6 +79,7 @@ li {
 
 .logo {
   font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 0.03em;
 }
@@ -91,6 +90,7 @@ li {
 
 .nav-element {
   font-weight: 500;
+  display: block;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -124,13 +124,13 @@ li {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
 }
 
 .header-address-list {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-right: 156px;
 }
 
 .address-element {
@@ -157,7 +157,7 @@ li {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/hero-bg.jpg");
+    url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -302,7 +302,6 @@ li {
   flex-direction: row;
   gap: 24px;
   justify-content: center;
-  margin-bottom: 120px;
 }
 
 .team-header-main {
@@ -494,30 +493,17 @@ li {
 }
 
 .body-footer {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #4d5ae5;
   background-color: #2e2f42;
-  height: 312px;
-  min-width: 1440px;
   padding: 100px 0 100px;
-  display: flex;
-  flex-direction: row;
-  gap: 120px;
 }
 
-.footer-media_box {
-  width: 208px;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-}
+/*.footer-media_box {
+} */
 
 .footer-icon_list {
   display: flex;
@@ -580,9 +566,8 @@ li {
 .footer-p {
   --p-color: #f4f4fd;
   line-height: 1.5;
+  font-weight: 400;
   color: var(--p-color);
   letter-spacing: 0.02em;
-  margin-bottom: 100px;
-  height: 72px;
   width: 264px;
 }
